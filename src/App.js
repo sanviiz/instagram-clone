@@ -12,7 +12,7 @@ export default function App() {
     <Router>
       <Suspense fallback={<p>Loading...</p>}>
         <Switch>
-          <Route path={ROUTES.DASHBOARD} component={Dashboard} />
+          <Route path={ROUTES.DASHBOARD} component={Dashboard} exact />
           <Route path={ROUTES.LOGIN} component={Login} />
           <Route path={ROUTES.SIGN_UP} component={SignUp} />
           <Route component={NotFound} />
